@@ -1,0 +1,50 @@
+# NZ Utility Detection Ltd – robots policy
+# Canonical host: https://nzutilitydetection.com
+#
+# Only the production apex domain is intended to be indexed.
+# Preview / staging hosts (e.g. *.deploypad.app) are additionally
+# blocked at the page level via <meta name="robots" content="noindex">
+# emitted by src/components/SeoCanonical.tsx whenever the runtime
+# hostname is not nzutilitydetection.com.
+
+User-agent: Googlebot
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+Disallow: /portal
+Disallow: /portal/
+Disallow: /*?*
+
+User-agent: Bingbot
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+Disallow: /portal
+Disallow: /portal/
+Disallow: /*?*
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: *
+Allow: /
+# Private / system routes – never index
+Disallow: /admin
+Disallow: /admin/
+Disallow: /portal
+Disallow: /portal/
+# Internal / utility routes
+Disallow: /admin/email-test
+Disallow: /admin/showcase
+# Block query-string duplicates (tracking params, etc.) – the canonical
+# version of every public page is the clean path with no querystring.
+Disallow: /*?*
+
+Sitemap: https://nzutilitydetection.com/sitemap.xml
+
+# Canonical host declaration (non-standard but respected by Yandex
+# and a useful signal for other crawlers).
+Host: nzutilitydetection.com
