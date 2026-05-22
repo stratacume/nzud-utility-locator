@@ -1,13 +1,9 @@
 import React from 'react';
-import AppLayout from '../AppLayout';
-import { AppProvider } from '../contexts/AppContext';
+import ReactDOM from 'react-dom/client';
+import AppLayout from './components/AppLayout';
 
-const Index: React.FC = () => {
-  return (
-    <AppProvider>
-      <AppLayout />
-    </AppProvider>
-  );
-};
-
-export default Index;
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
+    <AppLayout />
+  </React.StrictMode>,
+);
