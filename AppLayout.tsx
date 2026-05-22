@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Navigation from './Navigation';
-import HeroSection from './HeroSection';
-import Logo from './Logo';
-import NZUDTextLogo from './NZUDTextLogo';
-import CertifiedLocatorLogo from './CertifiedLocatorLogo';
+import Navigation from './src/components/Navigation';
+import HeroSection from './src/components/HeroSection';
+import Logo from './src/components/Logo';
+import NZUDTextLogo from './src/components/NZUDTextLogo';
+import CertifiedLocatorLogo from './src/components/CertifiedLocatorLogo';
 
 import { Phone, Mail } from 'lucide-react';
 
