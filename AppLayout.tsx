@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Navigation from './Navigation';
 import HeroSection from './HeroSection';
-import PricingSection from './src/components/PricingSection.tsx';
 import Logo from './Logo';
 import NZUDTextLogo from './NZUDTextLogo';
 import CertifiedLocatorLogo from './CertifiedLocatorLogo';
@@ -35,7 +34,7 @@ const AppLayout: React.FC = () => {
         onQuoteClick={scrollToPricing}
         onBookClick={scrollToPricing}
       />
-      <PricingSection />
+      
 
 
 
