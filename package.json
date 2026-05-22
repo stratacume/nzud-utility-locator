@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "build:dev": "vite build --mode development",
+    "build:dev": "vite build --mode development", 
+    "vercel-build": "rm -rf node_modules/.vite dist .vercel/output && vite build",
     "lint": "echo \"skipping lint\"",
     "preview": "vite preview"
   },
