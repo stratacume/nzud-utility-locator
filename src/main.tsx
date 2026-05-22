@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import AppLayout from './components/AppLayout';
+import AppLayout from '../AppLayout';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
