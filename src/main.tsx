@@ -1,7 +1,6 @@
-
 import React from 'react';
-import AppLayout from ',/AppLayout';
-import { AppProvider } from './contexts/AppContext';
+import AppLayout from '../AppLayout';
+import { AppProvider } from '../contexts/AppContext';
 
 const Index: React.FC = () => {
   return (
@@ -12,4 +11,3 @@ const Index: React.FC = () => {
 };
 
 export default Index;
-// trigger fresh Vercel deploy
