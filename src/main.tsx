@@ -1,9 +1,12 @@
-import React from 'react';
+mport React from 'react';
 import ReactDOM from 'react-dom/client';
-import Index from '../App';
+import { BrowserRouter } from 'react-router-dom';
+import AppLayout from '../AppLayout';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <Index />
+    <BrowserRouter>
+      <AppLayout />
+    </BrowserRouter>
   </React.StrictMode>,
 );
