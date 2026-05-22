@@ -15,13 +15,10 @@ const AppLayout: React.FC = () => {
 
   }, []);
 
-  const scrollToPricing = () => {
-    document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' });
-  };
 
   return (
     <div className="min-h-screen bg-brand-black">
-      <Navigation onBookClick={scrollToPricing} />
+      <Navigation />
       {/* Spacer for fixed nav — includes iOS safe-area-top so content
           is never hidden behind the system status bar / notch. */}
       <div style={{ paddingTop: 'calc(4rem + env(safe-area-inset-top))' }} />
@@ -29,11 +26,7 @@ const AppLayout: React.FC = () => {
 
       <NZUDTextLogo />
 
-      <HeroSection
-        onContactClick={scrollToPricing}
-        onQuoteClick={scrollToPricing}
-        onBookClick={scrollToPricing}
-      />
+      <HeroSection  />
       
 
 
