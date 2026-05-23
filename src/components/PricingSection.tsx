@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { supabase } from '@/lib/supabase';
 import { sendBookingConfirmationEmail, generateSignedDocumentLinks } from '@/lib/emailService';
-import AdditionalInfo from './pricing/AdditionalInfo';
-import BookingCard from './pricing/BookingCard';
+import AdditionalInfo from '../pricing/AdditionalInfo';
+import BookingCard from '../pricing/BookingCard';
 
 interface FormData { name: string; email: string; phone: string; address: string; notes: string; }
 interface FormErrors { name?: string; email?: string; phone?: string; address?: string; }
