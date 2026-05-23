@@ -1,15 +1,14 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-import Navigation from '../..Navigation.tsx';
-import HeroSection from '../..HeroSection.tsx';
-import PricingSection from './PricingSection.tsx';
-import Logo from '../..Logo.tsx';
-import NZUDTextLogo from '../..NZUDTextLogo.tsx';
-import CertifiedLocatorLogo from '../..CertifiedLocatorLogo.tsx';
+import Navigation from '../Navigation';
+import HeroSection from '../HeroSection';
+import PricingSection from './PricingSection';
+import Logo from '../Logo';
+import NZUDTextLogo from '../NZUDTextLogo';
+import CertifiedLocatorLogo from '../CertifiedLocatorLogo';
 
 import { Phone, Mail } from 'lucide-react';
-
 
 
 const AppLayout: React.FC = () => {
