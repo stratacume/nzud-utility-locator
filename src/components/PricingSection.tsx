@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { supabase } from '@/lib/supabase';
-import { sendBookingConfirmationEmail, generateSignedDocumentLinks } from '@/lib/emailService';
 import AdditionalInfo from '../pricing/AdditionalInfo';
 import BookingCard from '../pricing/BookingCard';
 
